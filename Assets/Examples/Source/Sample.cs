@@ -68,7 +68,8 @@ namespace Examples
                 "http://localhost:8080/"
             );
 
-            var dataPath = string.IsNullOrEmpty(Application.temporaryCachePath) ? Application.persistentDataPath : Application.temporaryCachePath;
+            // var dataPath = string.IsNullOrEmpty(Application.temporaryCachePath) ? Application.persistentDataPath : Application.temporaryCachePath;
+            var dataPath = Application.persistentDataPath;
             var localPathRoot = Path.Combine(dataPath, "packages");
             Debug.Log($"open localPathRoot: {localPathRoot}");
 

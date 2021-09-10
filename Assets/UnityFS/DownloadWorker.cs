@@ -239,7 +239,7 @@ namespace UnityFS
 
         private void ProcessJob(JobInfo jobInfo)
         {
-            // Debug.LogFormat("processing job: {0} ({1})", jobInfo.name, jobInfo.comment);
+            Debug.LogFormat("processing job: {0} ({1}) {2}", jobInfo.name, jobInfo.comment, jobInfo.path);
             var tempPath = jobInfo.path + PartExt;
 
             try
@@ -377,6 +377,8 @@ namespace UnityFS
 
                 if (success && _fileStream.Length != jobInfo.size)
                 {
+                    Debug.Log($">>>>{_fileStream.Length} ... { jobInfo.size}");
+                    
                     if (jobInfo.size > 0)
                     {
                         error = string.Format("filesize exception: {0} != {1}", _fileStream.Length, jobInfo.size);

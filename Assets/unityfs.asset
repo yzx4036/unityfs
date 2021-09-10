@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba571c4fc5746744a8dfbbbee4eecee, type: 3}
   m_Name: unityfs
   m_EditorClassIdentifier: 
-  id: 35
-  build: 8
+  id: 36
+  build: 9
   encryptionKey: test
   chunkSize: 4096
   bundles:
@@ -128,8 +128,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 1.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118848
+        totalRawSize: 121121
+        lastBuildSize: 81424
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 1.prefab
       - name: test1_cube_6edafwlehn6_wbvmw6.pkg
@@ -138,8 +138,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 2.prefab
-        totalRawSize: 117647
-        lastBuildSize: 117760
+        totalRawSize: 122493
+        lastBuildSize: 80896
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 2.prefab
       - name: test1_cube_6edafwlehn6_6jypz5.pkg
@@ -148,8 +148,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 3.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118432
+        totalRawSize: 121121
+        lastBuildSize: 81504
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 3.prefab
       - name: test1_cube_6edafwlehn6_xa7rp3.pkg
@@ -158,8 +158,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 4.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118592
+        totalRawSize: 121121
+        lastBuildSize: 81312
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 4.prefab
       - name: test1_cube_6edafwlehn6_2ftze5.pkg
@@ -168,8 +168,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 5.prefab
-        totalRawSize: 116329
-        lastBuildSize: 117968
+        totalRawSize: 121121
+        lastBuildSize: 81536
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 5.prefab
       - name: test1_cube_6edafwlehn6_eaem3.pkg
@@ -178,8 +178,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 6.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118448
+        totalRawSize: 121121
+        lastBuildSize: 81392
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 6.prefab
       - name: test1_cube_njhafwlehn6_g69nc5.pkg
@@ -188,8 +188,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 6a.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118624
+        totalRawSize: 121121
+        lastBuildSize: 80880
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 6a.prefab
       - name: test1_cube_njhafwlehn6_njv5y5.pkg
@@ -198,8 +198,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 7.prefab
-        totalRawSize: 116329
-        lastBuildSize: 118064
+        totalRawSize: 121121
+        lastBuildSize: 80864
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 7.prefab
       - name: test1_cube_njhafwlehn6_dgaef6.pkg
@@ -208,8 +208,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 8.prefab
-        totalRawSize: 117647
-        lastBuildSize: 117904
+        totalRawSize: 122493
+        lastBuildSize: 81584
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 8.prefab
       - name: test1_cube_njhafwlehn6_vvbor.pkg
@@ -218,8 +218,8 @@ MonoBehaviour:
         platform: 0
         assetPathHistroy:
         - Assets/Examples/Prefabs/Cube 9.prefab
-        totalRawSize: 117647
-        lastBuildSize: 117808
+        totalRawSize: 122493
+        lastBuildSize: 80816
         _assetPaths:
         - Assets/Examples/Prefabs/Cube 9.prefab
     - encrypted: 1
@@ -251,8 +251,8 @@ MonoBehaviour:
         assetPathHistroy:
         - Assets/Examples/Prefabs/dont_pack_me.mat
         - Assets/Examples/Materials/New Material 2.mat
-        totalRawSize: 4074
-        lastBuildSize: 77472
+        totalRawSize: 4228
+        lastBuildSize: 39456
         _assetPaths:
         - Assets/Examples/Prefabs/dont_pack_me.mat
         - Assets/Examples/Materials/New Material 2.mat
@@ -293,7 +293,7 @@ MonoBehaviour:
         - Assets/Examples/Scripts/main.js
         - Scripts/main.js
         - Scripts/file2.js
-        totalRawSize: 33
+        totalRawSize: 35
         lastBuildSize: 0
         _assetPaths:
         - Scripts/file2.js
@@ -356,7 +356,7 @@ MonoBehaviour:
         - Assets/Examples/Textures/editorwindow.png
         - Assets/Examples/Textures/test.png
         totalRawSize: 128542
-        lastBuildSize: 116656
+        lastBuildSize: 111216
         _assetPaths:
         - Assets/Examples/Textures/buildreport.png
         - Assets/Examples/Textures/editorwindow.png
@@ -406,8 +406,8 @@ MonoBehaviour:
         - Assets/Examples/Scenes/main_test.unity
         - Assets/Examples/Scenes/test2.unity
         - Assets/Examples/Scripts/main.js
-        totalRawSize: 22787
-        lastBuildSize: 169960
+        totalRawSize: 23608
+        lastBuildSize: 282262
         _assetPaths:
         - Assets/Examples/Scenes/main_test.unity
         - Assets/Examples/Scenes/test2.unity
@@ -440,7 +440,7 @@ MonoBehaviour:
         assetPathHistroy:
         - Assets/Examples/Files/test1.json
         - Assets/Examples/Files/test2.json
-        totalRawSize: 357
+        totalRawSize: 374
         lastBuildSize: 0
         _assetPaths:
         - Assets/Examples/Files/test1.json
@@ -473,8 +473,8 @@ MonoBehaviour:
         assetPathHistroy:
         - Assets/Examples/Shaders/NewShaderVariants.shadervariants
         - Assets/Examples/Shaders/NewSurfaceShader.shader
-        totalRawSize: 2074
-        lastBuildSize: 53000
+        totalRawSize: 2087
+        lastBuildSize: 30258
         _assetPaths:
         - Assets/Examples/Shaders/NewShaderVariants.shadervariants
         - Assets/Examples/Shaders/NewSurfaceShader.shader
@@ -515,7 +515,7 @@ MonoBehaviour:
         - Assets/Examples/Textures/Atlas/8.png
         - Assets/Examples/Textures/Atlas/9.png
         totalRawSize: 38492
-        lastBuildSize: 14745
+        lastBuildSize: 15089
         _assetPaths:
         - Assets/Examples/Textures/Atlas/0.png
         - Assets/Examples/Textures/Atlas/1.png
