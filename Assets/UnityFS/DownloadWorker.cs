@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using UnityFS.Utils;
 
@@ -239,7 +240,7 @@ namespace UnityFS
 
         private void ProcessJob(JobInfo jobInfo)
         {
-            Debug.LogFormat("processing job: {0} ({1}) {2}", jobInfo.name, jobInfo.comment, jobInfo.path);
+            // Debug.LogFormat("processing job: {0} ({1})", jobInfo.name, jobInfo.comment);
             var tempPath = jobInfo.path + PartExt;
 
             try
@@ -333,6 +334,7 @@ namespace UnityFS
                                 var recvCalc = 0L;
                                 var stopwatch = new Stopwatch();
                                 stopwatch.Start();
+                                _buffer = new byte[(int) rsp.ContentLength];
                                 while (recvAll < rsp.ContentLength)
                                 {
                                     var _bpms = Math.Max(1, jobInfo.bytesPerSecond / 10);
