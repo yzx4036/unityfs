@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using UnityFS.Utils;
 
@@ -333,6 +334,7 @@ namespace UnityFS
                                 var recvCalc = 0L;
                                 var stopwatch = new Stopwatch();
                                 stopwatch.Start();
+                                _buffer = new byte[(int) rsp.ContentLength];
                                 while (recvAll < rsp.ContentLength)
                                 {
                                     var _bpms = Math.Max(1, jobInfo.bytesPerSecond / 10);
@@ -377,6 +379,8 @@ namespace UnityFS
 
                 if (success && _fileStream.Length != jobInfo.size)
                 {
+                    Debug.Log($">>>>{_fileStream.Length} ... { jobInfo.size}");
+                    
                     if (jobInfo.size > 0)
                     {
                         error = string.Format("filesize exception: {0} != {1}", _fileStream.Length, jobInfo.size);

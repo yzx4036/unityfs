@@ -3,3 +3,6 @@ html
 body
     h1 My Site #{title}
     p Welcome #{name}
+    form(action="/upload" method="POST" enctype="multipart/form-data")
+        input(type="file" name="avatar")
+        input(type="submit" value="提交")

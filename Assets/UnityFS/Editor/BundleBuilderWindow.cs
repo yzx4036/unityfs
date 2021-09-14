@@ -42,7 +42,8 @@ namespace UnityFS.Editor
             var index = 0;
             do
             {
-                var filePath = "Assets/unityfs_asset_list" + (index > 0 ? "_" + (index++) : "") + Manifest.AssetListDataExt;
+                var filePath = $"Assets/unityfs_asset_list_{index++}{Manifest.AssetListDataExt}";
+                
                 if (!File.Exists(filePath))
                 {
                     var listData = new AssetListData();
