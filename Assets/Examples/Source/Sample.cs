@@ -153,7 +153,7 @@ namespace Examples
                 }, 10f));
 
                 // 加载资源, 通过辅助方法直接创建 GameObject
-                UnityFS.ResourceManager.Instantiate("Assets/Examples/Prefabs/Cube 1.prefab")
+                UnityFS.ResourceManager.InstantiateAsync("Assets/Examples/Prefabs/Cube 1.prefab")
                     .DestroyAfter(10.0f);
                 // 当所有对象均不引用一个 AssetBundle 时, 将自动卸载对应 AssetBundle
 
