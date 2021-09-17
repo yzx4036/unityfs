@@ -102,7 +102,7 @@ namespace Examples
         private void OnAllStartupsLoaded()
         {
             // 在 zip 包中的文件可以异步加载
-            var testFile = UnityFS.ResourceManager.LoadAsset("Assets/Examples/Config/test.txt");
+            var testFile = UnityFS.ResourceManager.LoadAssetAsync("Assets/Examples/Config/test.txt");
             testFile.completed += self =>
             {
                 var text = System.Text.Encoding.UTF8.GetString(testFile.ReadAllBytes());
@@ -132,14 +132,14 @@ namespace Examples
                 Debug.Log(System.Text.Encoding.UTF8.GetString(data));
 
                 // 加载资源, 得到原始 Asset 对象
-                UnityFS.ResourceManager.LoadAsset("Assets/Examples/Prefabs/Cube 1.prefab", self => UnityFS.Utils.AssetHandle.CreateInstance(self, 5.0f));
-                UnityFS.ResourceManager.LoadAsset("Assets/Examples/Prefabs/Cube 2.prefab", self => UnityFS.Utils.AssetHandle.CreateInstance(self, 5.0f));
+                UnityFS.ResourceManager.LoadAssetAsync("Assets/Examples/Prefabs/Cube 1.prefab", self => UnityFS.Utils.AssetHandle.CreateInstance(self, 5.0f));
+                UnityFS.ResourceManager.LoadAssetAsync("Assets/Examples/Prefabs/Cube 2.prefab", self => UnityFS.Utils.AssetHandle.CreateInstance(self, 5.0f));
 
                 UnityFS.Utils.PrefabLoader.Load("Assets/Examples/Prefabs/Cube 1.prefab");
 
                 if (image != null)
                 {
-                    ResourceManager.LoadAsset<Sprite>("Assets/Examples/Textures/Atlas/9.png", asset =>
+                    ResourceManager.LoadAssetAsync<Sprite>("Assets/Examples/Textures/Atlas/9.png", asset =>
                     {
                         AssetHandle.Attach(image.gameObject, asset);
                         image.sprite = asset.GetObject<Sprite>("9");
@@ -170,7 +170,7 @@ namespace Examples
                     scene = null;
                 }, 20f));
 
-                var fileList = UnityFS.ResourceManager.LoadAsset("Assets/Examples/Files");
+                var fileList = UnityFS.ResourceManager.LoadAssetAsync("Assets/Examples/Files");
                 fileList.completed += self =>
                 {
                     var fileListManifest = self.GetValue() as UnityFS.FileListManifest;
