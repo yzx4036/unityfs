@@ -1,3 +1,6 @@
 [submodule "Assets/unityfs_plugin"]
 	path = Assets/unityfs_plugin
 	url = git@github.com:yzx4036/unityfs_plugin.git
+[submodule "Tools/unityfs_httpserver"]
+	path = Tools/unityfs_httpserver
+	url = git@github.com:yzx4036/unityfs_httpserver.git
